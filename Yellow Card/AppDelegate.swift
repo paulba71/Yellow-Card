@@ -11,11 +11,43 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var settingShowAudioButton: Bool = true
+    var settingShowCardTitle: Bool = true
+    var settingLongPressForSound: Bool = true
+    var settingRunBefore: Bool = false // False until first run - true after
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Load the setting from UserDefaults
+        let defaults = UserDefaults.standard
+        let storedSettingRunBefore = defaults.bool(forKey: "RunBefore")
+        if storedSettingRunBefore{
+            let storedSettingShowAudioButton = defaults.bool(forKey: "ShowAudioButton")
+            settingShowAudioButton = storedSettingShowAudioButton
+            let storedSettingShowCardTitle = defaults.bool(forKey: "ShowCardTitle")
+            settingShowCardTitle = storedSettingShowCardTitle
+            let storedSettingLongPressForSound = defaults.bool(forKey: "LongPressForSound")
+            settingLongPressForSound = storedSettingLongPressForSound
+        } else {
+            settingRunBefore = true
+            saveSettings()
+        }
+        
+        //let tabBar: UITabBarController = (window?.rootViewController as? UITabBarController)!
+        //tabBar.selectedIndex = 3
+        
         return true
+    }
+    
+    func saveSettings() {
+        let defaults = UserDefaults.standard
+        defaults.set(settingRunBefore, forKey: "RunBefore")
+        defaults.set(settingShowAudioButton, forKey: "ShowAudioButton")
+        defaults.set(settingLongPressForSound, forKey: "LongPressForSound")
+        defaults.set(settingShowCardTitle, forKey: "ShowCardTitle")
+        defaults.set(settingRunBefore, forKey: "RunBefore")
     }
 
     // MARK: UISceneSession Lifecycle

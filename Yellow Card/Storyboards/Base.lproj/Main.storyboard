@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yellow-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="YellowViewController" customModule="Yellow_Card" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejH-wk-E6L">
+                                <rect key="frame" x="267" y="759" width="127" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="  Whistle" image="play.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playWhistle:" destination="9pv-A4-QxB" eventType="touchUpInside" id="n1M-9S-hRU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSa-xD-Oi6">
+                                <rect key="frame" x="20" y="64" width="374" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="FSa-xD-Oi6" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="ImV-wZ-PRA"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="ejH-wk-E6L" secondAttribute="trailing" constant="20" id="JUS-gd-waS"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="FSa-xD-Oi6" secondAttribute="trailing" constant="20" id="W5K-sE-nzr"/>
+                            <constraint firstItem="FSa-xD-Oi6" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="czC-Ef-b3C"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="ejH-wk-E6L" secondAttribute="bottom" constant="20" id="rYP-Pc-hor"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xNa-sJ-6Lu" appends="YES" id="aHF-Wn-ZaG"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Yellow" image="square.fill" catalog="system" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="cardLabel" destination="FSa-xD-Oi6" id="UAt-PD-pOO"/>
+                        <outlet property="playButton" destination="ejH-wk-E6L" id="crh-o9-dGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="xNa-sJ-6Lu">
+                    <connections>
+                        <action selector="longPressDetected:" destination="9pv-A4-QxB" id="4ze-jl-fho"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
+        </scene>
+        <!--Red-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="RedViewController" customModule="Yellow_Card" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyP-8C-8yo">
+                                <rect key="frame" x="20" y="64" width="374" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWL-DJ-lJf">
+                                <rect key="frame" x="267" y="759" width="127" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="  Whistle" image="play.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playWhistle:" destination="9pv-A4-QxB" eventType="touchUpInside" id="8Ls-fL-1ks"/>
+                                    <action selector="whistlePressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UUK-4Z-CeX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.031661580939988165" blue="0.12592954736259032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="VWL-DJ-lJf" secondAttribute="trailing" constant="20" id="5bH-KX-yBH"/>
+                            <constraint firstItem="GyP-8C-8yo" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="20" id="AQe-jp-GC6"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="VWL-DJ-lJf" secondAttribute="bottom" constant="20" id="B28-Jc-2j1"/>
+                            <constraint firstItem="GyP-8C-8yo" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="jVZ-RT-6pt"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="GyP-8C-8yo" secondAttribute="trailing" constant="20" id="l3q-nL-Pg5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="67Q-d5-tNz" appends="YES" id="baP-16-Jhw"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Red" image="square.fill.on.square.fill" catalog="system" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="cardLabel" destination="GyP-8C-8yo" id="O4l-mi-bFk"/>
+                        <outlet property="playButton" destination="VWL-DJ-lJf" id="2nt-mz-vKI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="67Q-d5-tNz">
+                    <connections>
+                        <action selector="longPressDetected:" destination="8rJ-Kc-sve" id="7Sx-DE-PJw"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="7a9-GW-VM8">
+            <objects>
+                <viewController id="6di-Zf-WYU" customClass="AboutSettingsViewController" customModule="Yellow_Card" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjW-vV-UPu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo6-pc-NQh">
+                                <rect key="frame" x="20" y="64" width="374" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written by: Paul Barnes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGi-cR-UyJ">
+                                <rect key="frame" x="20" y="130" width="374" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYl-9J-mWI">
+                                <rect key="frame" x="20" y="175.5" width="374" height="61"/>
+                                <string key="text">This app was written as a bit of fun and to learn a little about coding for iOS in Swift. I don't expect major changes to it but you never know...</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzS-TB-Akl">
+                                <rect key="frame" x="20" y="256.5" width="374" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Whistle Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSQ-pH-PNJ">
+                                <rect key="frame" x="20" y="302.5" width="190" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Press for Whistle Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy1-dd-BFD">
+                                <rect key="frame" x="20" y="348" width="267" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show card titles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrh-ko-MLn">
+                                <rect key="frame" x="20" y="393.5" width="145" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqw-ZI-r4W">
+                                <rect key="frame" x="345" y="300" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleShowAudioButton:" destination="6di-Zf-WYU" eventType="valueChanged" id="jUu-eH-SOc"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HRe-3J-lMY">
+                                <rect key="frame" x="345" y="345.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleLongPressForSound:" destination="6di-Zf-WYU" eventType="valueChanged" id="A3M-sP-UKi"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ncf-eu-861">
+                                <rect key="frame" x="345" y="391" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleShowCardTitles:" destination="6di-Zf-WYU" eventType="valueChanged" id="yF3-mW-GQE"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WzS-TB-Akl" firstAttribute="top" secondItem="qYl-9J-mWI" secondAttribute="bottom" constant="20" id="0m0-f8-a4S"/>
+                            <constraint firstItem="Gjp-F7-34s" firstAttribute="trailing" secondItem="dqw-ZI-r4W" secondAttribute="trailing" constant="20" id="4Hy-NP-GU9"/>
+                            <constraint firstItem="Ncf-eu-861" firstAttribute="centerY" secondItem="lrh-ko-MLn" secondAttribute="centerY" id="4R0-j7-gpf"/>
+                            <constraint firstAttribute="trailing" secondItem="qYl-9J-mWI" secondAttribute="trailing" constant="20" id="6j1-mQ-z0Y"/>
+                            <constraint firstItem="dqw-ZI-r4W" firstAttribute="centerY" secondItem="OSQ-pH-PNJ" secondAttribute="centerY" id="FyD-XI-WLQ"/>
+                            <constraint firstItem="Gjp-F7-34s" firstAttribute="trailing" secondItem="eo6-pc-NQh" secondAttribute="trailing" constant="20" id="HU0-DG-Phm"/>
+                            <constraint firstItem="qYl-9J-mWI" firstAttribute="leading" secondItem="Gjp-F7-34s" secondAttribute="leading" constant="20" id="Jrf-Hx-48w"/>
+                            <constraint firstItem="lrh-ko-MLn" firstAttribute="leading" secondItem="Gjp-F7-34s" secondAttribute="leading" constant="20" id="Od0-PR-QdJ"/>
+                            <constraint firstItem="OSQ-pH-PNJ" firstAttribute="leading" secondItem="Gjp-F7-34s" secondAttribute="leading" constant="20" id="RDe-qc-e0a"/>
+                            <constraint firstItem="Gjp-F7-34s" firstAttribute="trailing" secondItem="WzS-TB-Akl" secondAttribute="trailing" constant="20" id="T8g-uC-HYg"/>
+                            <constraint firstItem="gy1-dd-BFD" firstAttribute="leading" secondItem="Gjp-F7-34s" secondAttribute="leading" constant="20" id="VXg-Ml-a9R"/>
+                            <constraint firstItem="Gjp-F7-34s" firstAttribute="trailing" secondItem="Ncf-eu-861" secondAttribute="trailing" constant="20" id="Y70-tW-zUI"/>
+                            <constraint firstItem="gy1-dd-BFD" firstAttribute="top" secondItem="OSQ-pH-PNJ" secondAttribute="bottom" constant="20" id="YWQ-LR-4pE"/>
+                            <constraint firstItem="OSQ-pH-PNJ" firstAttribute="top" secondItem="WzS-TB-Akl" secondAttribute="bottom" constant="20" id="aTa-3r-9Cr"/>
+                            <constraint firstItem="lrh-ko-MLn" firstAttribute="top" secondItem="gy1-dd-BFD" secondAttribute="bottom" constant="20" id="gFt-ui-AJq"/>
+                            <constraint firstItem="HRe-3J-lMY" firstAttribute="centerY" secondItem="gy1-dd-BFD" secondAttribute="centerY" id="hoC-JN-y5S"/>
+                            <constraint firstItem="Gjp-F7-34s" firstAttribute="trailing" secondItem="HRe-3J-lMY" secondAttribute="trailing" constant="20" id="ldA-eR-UnM"/>
+                            <constraint firstItem="eo6-pc-NQh" firstAttribute="leading" secondItem="Gjp-F7-34s" secondAttribute="leading" constant="20" id="lyM-UQ-PAE"/>
+                            <constraint firstItem="WzS-TB-Akl" firstAttribute="leading" secondItem="Gjp-F7-34s" secondAttribute="leading" constant="20" id="m9u-SL-2NT"/>
+                            <constraint firstItem="qYl-9J-mWI" firstAttribute="leading" secondItem="Gjp-F7-34s" secondAttribute="leading" constant="20" id="nIz-mi-Bj1"/>
+                            <constraint firstItem="UGi-cR-UyJ" firstAttribute="leading" secondItem="Gjp-F7-34s" secondAttribute="leading" constant="20" id="rZq-92-8bm"/>
+                            <constraint firstItem="qYl-9J-mWI" firstAttribute="top" secondItem="UGi-cR-UyJ" secondAttribute="bottom" constant="20" id="tXx-i5-WDh"/>
+                            <constraint firstItem="eo6-pc-NQh" firstAttribute="top" secondItem="Gjp-F7-34s" secondAttribute="top" constant="20" id="vXi-MK-ECe"/>
+                            <constraint firstItem="UGi-cR-UyJ" firstAttribute="top" secondItem="eo6-pc-NQh" secondAttribute="bottom" constant="20" id="yJK-5d-vmi"/>
+                            <constraint firstItem="Gjp-F7-34s" firstAttribute="trailing" secondItem="UGi-cR-UyJ" secondAttribute="trailing" constant="20" id="yR6-Y2-bOU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gjp-F7-34s"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="person.fill" catalog="system" id="XyQ-db-Mtz"/>
+                    <connections>
+                        <outlet property="switchLongPressForSound" destination="HRe-3J-lMY" id="xD0-0p-ahs"/>
+                        <outlet property="switchShowAudioButton" destination="dqw-ZI-r4W" id="bDF-fy-52L"/>
+                        <outlet property="switchShowCardTitle" destination="Ncf-eu-861" id="2Jh-Be-OY4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gid-Nu-yDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815.9420289855075" y="716.51785714285711"/>
+        </scene>
+        <!--Black-->
+        <scene sceneID="9IJ-ei-EEj">
+            <objects>
+                <viewController id="xXg-Xy-TgK" customClass="BlackViewController" customModule="Yellow_Card" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ath-Br-EON">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SR6-VQ-4P8">
+                                <rect key="frame" x="20" y="64" width="374" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBh-f7-B90">
+                                <rect key="frame" x="267" y="759" width="127" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="  Whistle" image="play.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playWhistle:" destination="9pv-A4-QxB" eventType="touchUpInside" id="LHH-pD-MoG"/>
+                                    <action selector="whistlePressed:" destination="xXg-Xy-TgK" eventType="touchUpInside" id="DeG-5A-JYC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="mdX-T2-Tlf" firstAttribute="trailing" secondItem="LBh-f7-B90" secondAttribute="trailing" constant="20" id="1KX-qF-JOD"/>
+                            <constraint firstItem="SR6-VQ-4P8" firstAttribute="leading" secondItem="mdX-T2-Tlf" secondAttribute="leading" constant="20" id="W4A-hk-mLd"/>
+                            <constraint firstItem="mdX-T2-Tlf" firstAttribute="trailing" secondItem="SR6-VQ-4P8" secondAttribute="trailing" constant="20" id="tjj-ms-oEp"/>
+                            <constraint firstItem="SR6-VQ-4P8" firstAttribute="top" secondItem="mdX-T2-Tlf" secondAttribute="top" constant="20" id="yRW-qQ-VNc"/>
+                            <constraint firstItem="mdX-T2-Tlf" firstAttribute="bottom" secondItem="LBh-f7-B90" secondAttribute="bottom" constant="20" id="yy4-mU-QwU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mdX-T2-Tlf"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Uoe-fd-q1R" appends="YES" id="NRV-JT-5S9"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Black" image="clock.fill" catalog="system" id="XRZ-qL-8jm"/>
+                    <connections>
+                        <outlet property="cardLabel" destination="SR6-VQ-4P8" id="NDj-h7-lPR"/>
+                        <outlet property="playButton" destination="LBh-f7-B90" id="SJ8-MB-4qu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8T7-gc-IvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Uoe-fd-q1R">
+                    <connections>
+                        <action selector="longPressDetected:" destination="xXg-Xy-TgK" id="0S5-2U-X4R"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1672" y="13"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6di-Zf-WYU" kind="relationship" relationship="viewControllers" id="uAG-o1-vN7"/>
+                        <segue destination="xXg-Xy-TgK" kind="relationship" relationship="viewControllers" id="og1-Ar-lyg"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="square.fill" catalog="system" width="128" height="114"/>
+        <image name="square.fill.on.square.fill" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
