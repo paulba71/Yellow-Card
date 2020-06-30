@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA3E7AFA24AB83660059F208 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E7AF924AB83660059F208 /* SceneDelegate.swift */; };
+		CA3E7B1E24AB9A1F0059F208 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E7B1D24AB9A1F0059F208 /* BaseTabBarController.swift */; };
 		CA66F3DC24AA3A5E00F82CF7 /* whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA66F3DB24AA3A5E00F82CF7 /* whistle.mp3 */; };
 		CA66F3DF24AA3B0E00F82CF7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA66F3DE24AA3B0E00F82CF7 /* AVFoundation.framework */; };
 		CA66F3E124AA646800F82CF7 /* AboutSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA66F3E024AA646800F82CF7 /* AboutSettingsViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		CA3E7AF924AB83660059F208 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CA3E7B1D24AB9A1F0059F208 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		CA66F3DB24AA3A5E00F82CF7 /* whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = whistle.mp3; path = "/Users/paulba/iOS/Yellow Card/Yellow Card/Assets/whistle.mp3"; sourceTree = "<absolute>"; };
 		CA66F3DE24AA3B0E00F82CF7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CA66F3E024AA646800F82CF7 /* AboutSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSettingsViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				CA7E9BD524AA2BE80021F636 /* Storyboards */,
 				CA7E9BD424AA2B4C0021F636 /* View controllers */,
 				CA7E9BD624AA2C0C0021F636 /* Assets */,
+				CA3E7B1D24AB9A1F0059F208 /* BaseTabBarController.swift */,
 			);
 			path = "Yellow Card";
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3E7B1E24AB9A1F0059F208 /* BaseTabBarController.swift in Sources */,
 				CA7E9BC124AA29F70021F636 /* RedViewController.swift in Sources */,
 				CA7E9BBF24AA29F70021F636 /* YellowViewController.swift in Sources */,
 				CA7E9BBB24AA29F70021F636 /* AppDelegate.swift in Sources */,
